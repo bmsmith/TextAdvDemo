@@ -1,0 +1,38 @@
+# Starting Room! Gives the player a short introduction to the game!
+startroom:
+    name: The Starting Room
+    description: |
+        Where the starts happen!
+        Exits: North, West
+    north: northroom
+    west: westroom
+    items: []
+northroom:
+    name: The North Room
+    description: |
+        Whoops, not this way, chum-chum!
+        Exits: South
+    south: startroom
+    items: []
+westroom:
+    name: The West Room
+    description: |
+        This is a room that's a little more west than the others. 
+        Exits: East
+    east: startroom
+    items: [ book ]
+#
+# Items
+#
+items:
+    book:
+        read: |
+             A Canterlot Burglar
+             
+             
+             A happy pegasus alighted on a tower balcony and began to sing.
+             This affront was completely uncalled for and would not go unpunished.
+             Within the tower, in a dusty old wood-and-plaster room, another pegasus stirred at the sound of the tone-deaf pony. She rolled over, landing on the mass of bandages that made up her right wing, and awoke from the pain.
+             Sky Runner's eye flickered open.
+        examine: |
+             You see a small book, bound with leather and closed with a gold clasp. Luckily it looks unlocked. Brand new, too!
